@@ -61,12 +61,16 @@
                         <li><a href="essays.html"><i  ></i>文章</a></li>
                         <li><a href="person.html"><i></i>个人</a></li>
 						<li><a href="#programs"><i></i>项目介绍</a></li>
-                        <li><a href="https://github.com/laiqingfa"><i  ></i>github主页</a></li>
+                        <li><a href="https://github.com/laiqingfa"> github主页</a></li>
+						
                     </ul>
 				<span> &nbsp;</span>
 				<span> &nbsp;</span>
+				<audio src="music/西村由紀江 - 明日を信じて.mp3" controls="controls" preload id="music" hidden>
+				</audio>
+				<h3 id="a" onclick="a();" class="icon-volume">  </h3>
 				<span> &nbsp;</span>
-				<span> &nbsp;</span>
+				 
 				<h2>&nbsp;&nbsp;&nbsp;&nbsp;  I'm Lai QingFa </a></h2>
 				
 				
@@ -142,7 +146,24 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	
-	 
+	<!-- music -->
+	<script>   
+    window.onload = function()
+        {
+		document.getElementById('music').play();
+             
+			
+        }
+   function a(){
+     var audio = document.getElementById('music'); 
+     if(audio.paused){                 
+         audio.play();//audio.play();// 播放  
+     }
+     else{
+          audio.pause();// 暂停
+     } 
+   }
+</script>
 	</body>
 </html>
 
