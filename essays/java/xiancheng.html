@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>java之路</title>
+	<title>多线程</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -55,24 +55,36 @@
 				</ul>
 			</nav>
 			<div class="page-title">				 
-				<span>Update MAY 30, 2018</span>
-				<h2>java之路</h2>
+				<span>Update MAY 31, 2018</span>
+				<h2>多线程</h2>
 			</div>
 		</div>
 		<div id="fh5co-main-content">
 			<div class="fh5co-post"> 
 				<div class="fh5co-entry padding">
 					<div>
-					  
+					     
+						<h3> </h3>
+					    
+						  <p> Java多线程实现方式主要有四种：继承Thread类、实现Runnable接口、实现Callable接口通过FutureTask包装器来创建Thread线程、使用ExecutorService、Callable、Future实现有返回结果的多线程。
+其中前两种方式线程执行完后都没有返回值，后两种是带返回值的。</p>
+						 
 						 <h3> </h3>
-						 <h3><a  href="java/random.html">1.0 java的随机函数.....................................................................................</a></h3>					 					 
-						   
-					 <h3><a  href="java/xiancheng.html">1.1 多线程.....................................................................................</a></h3>					 					 
-						   
+					  
+					    <h3>一、继承Thread类创建线程</h3>					 					 
+						  <h3> </h3>
+						  <p>Thread类本质上是实现了Runnable接口的一个实例，代表一个线程的实例。启动线程的唯一方法就是通过Thread类的start()实例方法。start()方法是一个native方法，它将启动一个新线程，并执行run()方法。这种方式实现多线程很简单，通过自己的类直接extend Thread，并复写run()方法，就可以启动新线程并执行自己定义的run()方法。</p>
+					 
+						 <h3> </h3> 
+						  <h3>二、实现Runnable接口创建线程 </h3> 
+						 <p>   </p>
+						  <h3> </h3> 
+						  <h3>三、实现Callable接口通过FutureTask包装器来创建Thread线程 </h3> 
+						 <p>   </p>
+						  <h3> </h3>
+						   <h3> 参考文章：</h3>
+						   <p> https://blog.csdn.net/Tongseng/article/details/78688806</p>
 						  
-						  <h3> <a href=""></a></h3>
-						  <h3> <a href=""></a></h3>
-						  <h3> <a href=""></a></h3> 
 					 </div>
 				</div>
 				
@@ -86,7 +98,7 @@
 
 	<footer>
 		<div>
-					  <a href="" target="_blank">2018.5.28</a> 
+					&copy; 2016 Free HTML5. All Rights Reserved. Designed by <a href="" target="_blank">FreeHTML5</a> 
 					</div>
 				</footer>
 
