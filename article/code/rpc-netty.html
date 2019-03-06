@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>解忧杂货铺</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="../../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="../../css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+<body>
+    <div class="sidenav">
+		<div class="side_top">
+			<img src="../../images/t3.jpg" alt="news image" class="img-fluid navimg">
+			<h1> 游戏服务端开发 <br>“ 枸杞难挡岁月吹，还得往里加当归 ”<br>现居厦门</h1>
+		</div>
+		<!-- header -->
+		<header>
+			<div class="container-fluid px-lg-5 ">
+				<nav class="mnu mx-auto">
+                    <label for="drop" class="toggle">类目</label>
+                    <input type="checkbox" id="drop">
+						<ul class="menu">
+							<li class="active"><a href="../../index.html">主页</a></li>
+							 <li class="mt-sm-3"><a href="../../index.html#news" class="scroll">个人笔记</a></li>
+							 <li class="mt-sm-3"><a href="../../index.html#gallery" class="scroll">摄影</a></li>
+							<li class="mt-sm-3"><a href="../../index.html#services" class="scroll">项目和Demo</a></li>
+                            <!-- <li class="mt-sm-3"><a href="#contact" class="scroll">联系我</a></li> -->
+                        </ul>
+				</nav>
+			</div>
+		</header>
+    </div>
+    <div class="main" id="about">
+        <div class="banner-text-w3ls">
+            <div class="container">
+			<div class="mx-auto text-center">
+			<h1>Netty
+				<br>&nbsp;</h1>
+				</div >
+                <div class="mx-auto text-left">
+					<h2>一、简介</h2>
+					<h5> &nbsp; </h5>
+					<h5>1.1 BIO和NIO、AIO</h5>	
+					<h5> &nbsp; </h5>
+					<p> Blocking IO： 同步阻塞的编程方式；Unblocking IO（New IO）： 同步非阻塞的编程方式；Asynchronous IO： 异步非阻塞的编程方式</p> 
+					<h5> &nbsp; </h5>
+					<p> 同步和异步是针对应用程序和内核的交互而言的，同步指的是用户进程触发IO操作并等待或者轮询的去查看IO操作是否就绪，而异步是指用户进程触发IO操作以后便开始做自己的事情，而当IO操作已经完成的时候会得到IO完成的通知。</p>
+					<h5> &nbsp; </h5>
+					<p>同步非阻塞，服务器实现模式为一个请求一个通道，即客户端发送的连接请求都会注册到多路复用器上，多路复用器轮询到连接有I/O请求时才启动一个线程进行处理。
+NIO方式适用于连接数目多且连接比较短（轻操作）的架构；异步非阻塞，服务器实现模式为一个有效请求一个线程，客户端的I/O请求都是由OS先完成了再通知服务器应用去启动线程进行处理。
+AIO方式使用于连接数目多且连接比较长（重操作）的架构</p>
+					
+					<h5> &nbsp; </h5>	
+					<h5>1.2 Netty简介</h5>	
+					<h5> &nbsp; </h5>		   
+					<p>Netty是由JBOSS提供的一个java开源框架。Netty基于NIO,提供异步的、事件驱动的网络应用程序框架和工具</p>	
+					<p>在设计上：针对多种传输类型的统一接口 - 阻塞和非阻塞；简单但更强大的线程模型；真正的无连接的数据报套接字支持；链接逻辑支持复用；</p>	
+					<p>在性能上：比核心 Java API 更好的吞吐量，较低的延时；资源消耗更少，这个得益于共享池和重用；减少内存拷贝</p>	
+					<p>在健壮性上：消除由于慢，快，或重载连接产生的 OutOfMemoryError；消除经常发现在 NIO 在高速网络中的应用中的不公平的读/写比
+在安全上：完整的 SSL / TLS 和 StartTLS 的支持
+且已得到大量商业应用的真实验证,如：Hadoop项目的Avro（RPC框架）、Dubbo、Dubbox等RPC框架。</p>	
+					<h5> &nbsp; </h5>
+					<h2>二、实现</h2>
+					<h5> &nbsp; </h5>
+					<h5>2.1 简单java实现的demo</h5>	 
+					<h5> &nbsp; </h5>
+					<li> <a href="https://github.com/LaiQingFa/notes/blob/master/Rpc/netty/demo1/Server.java">服务端</a></li>
+					<li> <a href="https://github.com/LaiQingFa/notes/blob/master/Rpc/netty/demo1/ServerHandler.java">服务端业务处理</a></li>
+					<li> <a href="https://github.com/LaiQingFa/notes/blob/master/Rpc/netty/demo1/Client.java">客户端</a></li>
+					<li> <a href="https://github.com/LaiQingFa/notes/blob/master/Rpc/netty/demo1/ClientHandler.java">客户端业务处理</a></li>
+		 
+                </div>
+            </div>
+        </div>
+		 <!-- Gallery -->
+		 
+ 
+    </div>
+</body>
+</html>
